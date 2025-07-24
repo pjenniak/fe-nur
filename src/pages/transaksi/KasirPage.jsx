@@ -532,7 +532,7 @@ const useKasir = () => {
     setForm(initPesananDTO);
     setItems([]);
   };
-const subTotal = items.reduce((acc, item) => acc + item.produk_harga * item.jumlah, 0);
+const subTotal = items?.reduce((acc, item) => acc + item?.produk_harga * item?.jumlah, 0);
 
 
   console.log({subTotal})
